@@ -1,0 +1,28 @@
+
+    input:focus, textarea:focus, select:focus { outline: none; }
+    .card { box-shadow: 0 8px 20px rgba(2,6,23,0.08); transition: transform 0.2s ease; }
+    .card:hover { transform: translateY(-4px); }
+    input[type=range] { accent-color: #6366f1; }
+
+    #hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+      z-index: -1;
+    }
+
+    #toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(55,65,81,0.95);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      display: none;
+      z-index: 50;
+    }
+    .fade-out { opacity: 0; transition: opacity 0.3s ease; }
+  
